@@ -34,7 +34,7 @@ app.options('/graphql', cors(corsOptions));
 app.use('/graphql', cors(corsOptions));
 installHandler(app);
 
-const port = process.env.API_SERVER_PORT || 3000;
+const port = process.env.PORT || 3000;
 
 (async function start() {
   try {
